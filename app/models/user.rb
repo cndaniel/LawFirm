@@ -3,6 +3,12 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  # 用户和回答
+  has_many :comments
+  has_many :legalmatters
+
+
 end
 
 # == Schema Information

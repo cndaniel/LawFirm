@@ -1,12 +1,13 @@
-class Commit < ApplicationRecord
+class Comment < ApplicationRecord
+  belongs_to :user
+  belongs_to :legalmatter
 end
 
 # == Schema Information
 #
-# Table name: commits
+# Table name: comments
 #
 #  id         :integer          not null, primary key
-#  answer     :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
