@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  answer: MyText
+
+two:
+  answer: MyText
+
+# == Schema Information
+#
+# Table name: commits
+#
+#  id         :integer          not null, primary key
+#  answer     :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
